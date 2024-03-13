@@ -9,7 +9,7 @@ Table of Contents                              *monokai-pro-table-of-contents*
   - Ristretto                                          |monokai-pro-ristretto|
   - Spectrum                                            |monokai-pro-spectrum|
   - Classic                                              |monokai-pro-classic|
-  - Light						   monokai-pro-light
+  - Light						   |monokai-pro-light|
   - Installation                                    |monokai-pro-installation|
   - Configuration                                  |monokai-pro-configuration|
   - Usage                                                  |monokai-pro-usage|
