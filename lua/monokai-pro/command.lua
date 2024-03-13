@@ -19,6 +19,9 @@ M.create_filter_command = function()
       local filter = item.value
       config.extend({ filter = filter })
       vim.cmd([[colorscheme monokai-pro]])
+      vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "grey", bold = false })
+      vim.api.nvim_set_hl(0, "LineNr", { fg = config.filter == "light" and "#ffbf00" or "yellow", bold = true })
+      vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "grey", bold = false })
     end)
     assert(menu, "Error: Fail to create menu")
     menu:mount()
@@ -28,6 +31,9 @@ M.create_filter_command = function()
     local filter = opts.args
     config.extend({ filter = filter })
     vim.cmd([[colorscheme monokai-pro]])
+    vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "grey", bold = false })
+    vim.api.nvim_set_hl(0, "LineNr", { fg = config.filter == "light" and "#ffbf00" or "yellow", bold = true })
+    vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "grey", bold = false })
   end, {
     nargs = 1,
     complete = function()
