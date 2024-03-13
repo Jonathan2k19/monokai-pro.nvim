@@ -9,6 +9,7 @@ Table of Contents                              *monokai-pro-table-of-contents*
   - Ristretto                                          |monokai-pro-ristretto|
   - Spectrum                                            |monokai-pro-spectrum|
   - Classic                                              |monokai-pro-classic|
+  - Light						   monokai-pro-light
   - Installation                                    |monokai-pro-installation|
   - Configuration                                  |monokai-pro-configuration|
   - Usage                                                  |monokai-pro-usage|
@@ -33,6 +34,9 @@ SPECTRUM                                                *monokai-pro-spectrum*
 
 
 CLASSIC                                                  *monokai-pro-classic*
+
+
+LIGHT							   *monokai-pro-light*
 
 
 PLUGIN SUPPORT ~
@@ -91,6 +95,7 @@ There are several themes included in this plugin.
 - |monokai-pro-ristretto| – Monokai Pro (Filter Machine)
 - |monokai-pro-spectrum| – Monokai Pro (Filter Machine)
 - |monokai-pro-classic| – Monokai Classic
+- monokai-pro-light - Monokai Light
 
 Example configuration:
 
@@ -109,12 +114,12 @@ Example configuration:
         annotation = { italic = true },
         tag_attribute = { italic = true }, -- attribute of tag in reactjs
       },
-      filter = "pro", -- classic | octagon | pro | machine | ristretto | spectrum
+      filter = "pro", -- classic | octagon | pro | machine | ristretto | spectrum | light
       -- Enable this will disable filter option
       day_night = {
         enable = false, -- turn off by default
-        day_filter = "pro", -- classic | octagon | pro | machine | ristretto | spectrum
-        night_filter = "spectrum", -- classic | octagon | pro | machine | ristretto | spectrum
+        day_filter = "pro", -- classic | octagon | pro | machine | ristretto | spectrum | light
+        night_filter = "spectrum", -- classic | octagon | pro | machine | ristretto | spectrum | light
       },
       inc_search = "background", -- underline | background
       background_clear = {
@@ -266,7 +271,7 @@ This is a sample config to use `Tokyonight` as the palette:
 >lua
     require("monokai-pro").setup({
         -- ...
-        --- @param filter "classic" | "machine" | "octagon" | "pro" | "ristretto" | "spectrum"
+        --- @param filter "classic" | "machine" | "octagon" | "pro" | "ristretto" | "spectrum" | "light"
         override = function(c)
           return {
             IndentBlanklineChar = { fg = c.base.dimmed4 },

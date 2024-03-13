@@ -277,7 +277,7 @@ This is a sample config to use `Tokyonight` as the palette:
 ```lua
 require("monokai-pro").setup({
     -- ...
-    --- @param filter "classic" | "machine" | "octagon" | "pro" | "ristretto" | "spectrum"
+    --- @param filter "classic" | "machine" | "octagon" | "pro" | "ristretto" | "spectrum" | "light"
     override = function(c)
       return {
         IndentBlanklineChar = { fg = c.base.dimmed4 },
